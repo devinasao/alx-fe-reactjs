@@ -3,10 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import WelcomeMessage from './components/WelcomeMessage.jsx'
-import Header from './components/Header.jsx'
-import MainContent from './assets/MainContent.jsx'
-import Footer from './components/Footer.jsx'
-import UserProfile from './components/UserProfile.jsx'
+import Header from './components/Header';
+import MainContent from './assets/MainContent';
+import Footer from './components/Footer';
+import UserProfile from './components/UserProfile';
 
 
 function App() {
