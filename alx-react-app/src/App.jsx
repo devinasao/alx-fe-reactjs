@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import WelcomeMessage from './components/WelcomeMessage.jsx'
 import Header from './components/Header';
-import MainContent from './assets/MainContent';
+import MainContent from './components/MainContent.jsx';
 import Footer from './components/Footer';
 import UserProfile from './components/UserProfile';
 
@@ -14,6 +14,11 @@ function App() {
 
   return (
     <>
+      <WelcomeMessage />
+      <Header />
+      <MainContent />
+      <UserProfile name="Stephen Franca" age={23} bio="A software developer from NY." />
+      <Footer />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -30,11 +35,6 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-        <WelcomeMessage />
-        <Header />
-        <MainContent />
-        <UserProfile name="Stephen Franca" age={23} bio="A software developer from NY." />
-        <Footer />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
